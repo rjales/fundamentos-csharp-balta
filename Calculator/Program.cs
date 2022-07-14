@@ -18,7 +18,7 @@ namespace Calculator
             Console.WriteLine("1 - Soma");
             Console.WriteLine("2 - Subtração");
             Console.WriteLine("3 - Multiplicação");
-            Console.WriteLine("4 - Divisão"); 
+            Console.WriteLine("4 - Divisão");
 
             Console.WriteLine("-------------------");
             Console.Write("Selecione uma opção: ");
