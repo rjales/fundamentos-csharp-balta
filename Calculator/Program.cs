@@ -19,11 +19,21 @@ namespace Calculator
             Console.WriteLine("2 - Subtração");
             Console.WriteLine("3 - Multiplicação");
             Console.WriteLine("4 - Divisão");
+            Console.WriteLine("5 - Sair");
 
             Console.WriteLine("-------------------");
             Console.Write("Selecione uma opção: ");
             short res = short.Parse(Console.ReadLine());
 
+            switch (res)
+            {
+                case 1: Soma(); break;
+                case 2: Subtracao(); break;
+                case 3: Multiplicacao(); break;
+                case 4: Divisao(); break;
+                case 5: System.Environment.Exit(0); break;
+                default: Menu(); break;
+            }
         }
 
         static void Soma()
@@ -33,7 +43,7 @@ namespace Calculator
             Console.Write("Primeiro valor: ");
             double v1 = double.Parse(Console.ReadLine());
 
-            Console.Write("Segundo valor ");
+            Console.Write("Segundo valor: ");
             double v2 = double.Parse(Console.ReadLine());
 
             double result = v1 + v2;
@@ -41,6 +51,7 @@ namespace Calculator
             Console.WriteLine($"o resultado da soma é: {result}");
 
             Console.ReadKey();
+            Menu();
         }
 
         static void Subtracao()
@@ -50,7 +61,7 @@ namespace Calculator
             Console.Write("Primeiro valor: ");
             double v1 = double.Parse(Console.ReadLine());
 
-            Console.Write("Segundo valor ");
+            Console.Write("Segundo valor: ");
             double v2 = double.Parse(Console.ReadLine());
 
             double result = v1 - v2;
@@ -58,6 +69,7 @@ namespace Calculator
             Console.WriteLine($"o resultado da subtração é: {result}");
 
             Console.ReadKey();
+            Menu();
         }
 
         static void Multiplicacao()
@@ -67,7 +79,7 @@ namespace Calculator
             Console.Write("Primeiro valor: ");
             double v1 = double.Parse(Console.ReadLine());
 
-            Console.Write("Segundo valor ");
+            Console.Write("Segundo valor: ");
             double v2 = double.Parse(Console.ReadLine());
 
             double result = v1 * v2;
@@ -75,6 +87,7 @@ namespace Calculator
             Console.WriteLine($"o resultado da multiplicação é: {result}");
 
             Console.ReadKey();
+            Menu();
         }
 
         static void Divisao()
@@ -84,7 +97,7 @@ namespace Calculator
             Console.Write("Primeiro valor: ");
             double v1 = double.Parse(Console.ReadLine());
 
-            Console.Write("Segundo valor ");
+            Console.Write("Segundo valor: ");
             double v2 = double.Parse(Console.ReadLine());
 
             double result = v1 / v2;
@@ -92,6 +105,7 @@ namespace Calculator
             Console.WriteLine($"o resultado da divisão é: {result}");
 
             Console.ReadKey();
+            Menu();
         }
     }
 }
