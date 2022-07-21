@@ -2,7 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
+<<<<<<< HEAD
     <TargetFramework>net5.0</TargetFramework>
+=======
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+>>>>>>> d372b43a02d9bbc55f17774564be9e9c97b2b689
   </PropertyGroup>
 
 </Project>
